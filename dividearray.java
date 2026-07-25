@@ -5,13 +5,11 @@ public class dividearray {
         int arr [] = {10,20,30,40,50,60};
         int one [] = new int [arr.length/2];
         int two [] = new int [arr.length/2];
-        int j = 0;
-        int k = 0;
-        int i = 0;
-        while( i < arr.length){
-            one[k++] = arr[i++];    
-            two[j++] = arr[i++];
-            
+        int i = 0 ; 
+        int k = arr.length/2;
+        while(i < arr.length/2){
+            one[i] = arr[i];
+            two[i++] = arr[k++];
         }
         System.out.println(Arrays.toString(one));
         System.out.println(Arrays.toString(two));
